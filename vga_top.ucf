@@ -1,0 +1,40 @@
+
+#Created by Constraints Editor (xc3s1500-fg320-5) - 2015/06/06
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;
+NET "rst" OFFSET = IN 20 ns VALID 20 ns BEFORE "clk" RISING;
+NET "regNeg" OFFSET = IN 20 ns VALID 20 ns BEFORE "clk" RISING;
+OFFSET = OUT 20 ns AFTER "clk";
+NET "vsync" OFFSET = OUT 20 ns AFTER "clk";
+NET "hsync" OFFSET = OUT 20 ns AFTER "clk";
+#pin2ucf - Sat Jun 06 16:11:52 2015
+#The following constraints were newly added
+NET "green<3>" LOC = R3;
+NET "red<0>" LOC = T11;
+NET "green<4>" LOC = R1;
+NET "red<1>" LOC = V11;
+NET "green<5>" LOC = R2;
+NET "red<2>" LOC = T12;
+NET "green<6>" LOC = P3;
+NET "red<3>" LOC = P12;
+NET "green<7>" LOC = P7;
+NET "red<4>" LOC = V10;
+NET "red<5>" LOC = U13;
+NET "clk" LOC = P10;
+NET "red<6>" LOC = P8;
+NET "red<7>" LOC = T7;
+NET "blue<0>" LOC = R11;
+NET "hsync" LOC = V8;
+NET "blue<1>" LOC = V12;
+NET "blue<2>" LOC = R12;
+NET "rst" LOC = V3;
+NET "blue<3>" LOC = R13;
+NET "blue<4>" LOC = P11;
+NET "blue<5>" LOC = U10;
+NET "blue<6>" LOC = R7;
+NET "blue<7>" LOC = T5;
+NET "vsync" LOC = P6;
+NET "regNeg" LOC = V7;
+NET "green<0>" LOC = R6;
+NET "green<1>" LOC = T1;
+NET "green<2>" LOC = U1;

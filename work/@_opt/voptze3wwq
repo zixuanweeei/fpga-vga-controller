@@ -1,0 +1,121 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\homework\VGA
+T_opt
+V[aWdU@L@K5gdi3VUDm^EO3
+04 22 4 work vga_top_vga_top_sch_tb fast 0
+04 4 4 work glbl fast 0
+=1-047d7b9d7d8c-5572b553-14f-830
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver +acc
+n@_opt
+OE;O;10.1a;51
+vglbl
+IlJ9ToEUUk6Y5AoNI6TUBo0
+VM[9mS]S:KA1i4VeCMX35[3
+Z1 dE:\homework\VGA
+w1341890449
+8D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v
+FD:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+Z2 OE;L;10.1a;51
+r1
+31
+Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 >P`I5MN_o?8cCP=C=Bl4_3
+!s85 0
+!s108 1433580880.261000
+!s107 D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v|
+vvga_controller
+!s100 X06ie1W?:[B7]G:zG2gDK0
+I41IE2TVogLBnHMT8[K;d02
+V<KbjlJ<A884NzdbE`hhD52
+R1
+w1433566475
+8src/vga_controller.v
+Fsrc/vga_controller.v
+L0 21
+R2
+r1
+31
+!s90 -reportprogress|300|src/vga_controller.v|
+R3
+!s108 1433580878.969000
+!s107 src/vga_controller.v|
+!i10b 1
+!s85 0
+vvga_dcm
+!s100 M3Wc8h]E6J_HR1R2?oR<A3
+IK@gH2<UgkTXA<9]gQ0MD60
+V^CI0;L648XJa?[f>nE^4H1
+R1
+w1433573391
+8vga_dcm.v
+Fvga_dcm.v
+L0 23
+R2
+r1
+31
+!s90 -reportprogress|300|vga_dcm.v|
+R3
+!s108 1433580879.482000
+!s107 vga_dcm.v|
+!i10b 1
+!s85 0
+vvga_rom
+!s100 T=o_a3IUL<4zOMhJFJ_<P1
+I0dK0RDZkQ_?`NJ7I=i@9h1
+VUFX4>f9Fi65aK?kFPA<Wh3
+R1
+w1433571904
+8ipcore_dir/vga_rom.v
+Fipcore_dir/vga_rom.v
+L0 39
+R2
+r1
+31
+!s90 -reportprogress|300|ipcore_dir/vga_rom.v|
+R3
+!s108 1433580879.270000
+!s107 ipcore_dir/vga_rom.v|
+!i10b 1
+!s85 0
+vvga_top
+!s100 n`fWX@5I_F^7fzYT3D:E83
+IaiM`4HD^ULZ6Sh>JXIb6Y2
+V^6XB0hFFB>O2E[3U8`Hb71
+R1
+w1433573388
+8vga_top.vf
+Fvga_top.vf
+L0 23
+R2
+r1
+31
+!s90 -reportprogress|300|vga_top.vf|
+R3
+!s108 1433580879.660000
+!s107 vga_top.vf|
+!i10b 1
+!s85 0
+vvga_top_vga_top_sch_tb
+I@=HO6e27BNR9Yid?MMRAd3
+VI2B8<BTK`8bO>VQH6jZic3
+R1
+w1433580860
+8src/test.v
+Fsrc/test.v
+L0 5
+R2
+r1
+31
+R3
+!s100 DcQTnkX<K]V?32fe0=DNc1
+!s108 1433580879.960000
+!s107 src/test.v|
+!s90 -reportprogress|300|src/test.v|
+!i10b 1
+!s85 0

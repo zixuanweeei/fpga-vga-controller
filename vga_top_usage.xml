@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="4">
+<DesignStatistics TimeStamp="Sat Jun 06 16:15:14 2015"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="4">
+<attrib name="value" value="29"/></item>
+<item name="AGG_IO" rev="4">
+<attrib name="value" value="29"/></item>
+<item name="AGG_SLICE" rev="4">
+<attrib name="value" value="119"/></item>
+<item name="NUM_4_INPUT_LUT" rev="4">
+<attrib name="value" value="224"/></item>
+<item name="NUM_BONDED_IOB" rev="4">
+<attrib name="value" value="29"/></item>
+<item name="NUM_BUFGMUX" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NUM_CYMUX" rev="4">
+<attrib name="value" value="36"/></item>
+<item name="NUM_DCM" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LUT_RT" rev="4">
+<attrib name="value" value="21"/></item>
+<item name="NUM_RAMB16" rev="4">
+<attrib name="value" value="22"/></item>
+<item name="NUM_SLICEL" rev="4">
+<attrib name="value" value="119"/></item>
+<item name="NUM_SLICE_FF" rev="4">
+<attrib name="value" value="41"/></item>
+<item name="NUM_XOR" rev="4">
+<attrib name="value" value="29"/></item>
+<item name="Xilinx Core blk_mem_gen_v7_2, Xilinx CORE Generator 14.2" rev="4">
+<attrib name="value" value="1"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

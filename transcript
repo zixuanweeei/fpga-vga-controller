@@ -1,0 +1,68 @@
+# Reading D:/modeltech_10.1a/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1a Feb 22 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {vga_top_vga_top_sch_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module vga_controller
+# 
+# Top level modules:
+# 	vga_controller
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module vga_rom
+# 
+# Top level modules:
+# 	vga_rom
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module vga_dcm
+# 
+# Top level modules:
+# 	vga_dcm
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module vga_top
+# 
+# Top level modules:
+# 	vga_top
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module vga_top_vga_top_sch_tb
+# 
+# Top level modules:
+# 	vga_top_vga_top_sch_tb
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -lib work -voptargs=\"+acc\" -t 1ps work.vga_top_vga_top_sch_tb glbl 
+# Loading work.vga_top_vga_top_sch_tb(fast)
+# Loading work.vga_top(fast)
+# Loading work.vga_controller(fast)
+# Loading work.vga_dcm(fast)
+# Loading unisims_ver.IBUFG(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading unisims_ver.DCM(fast)
+# Loading unisims_ver.dcm_clock_divide_by_2(fast)
+# Loading unisims_ver.dcm_maximum_period_check(fast)
+# Loading unisims_ver.dcm_maximum_period_check(fast__1)
+# Loading unisims_ver.dcm_clock_lost(fast)
+# Loading work.vga_rom(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_mem_module(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_output_stage(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_softecc_output_reg_stage(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  Block Memory Generator CORE Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator CORE Generator module vga_top_vga_top_sch_tb.UUT.XLXI_3.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run -all

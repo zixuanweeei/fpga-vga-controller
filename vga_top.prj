@@ -1,0 +1,4 @@
+verilog work "src/vga_controller.v"
+verilog work "ipcore_dir/vga_rom.v"
+verilog work "vga_dcm.v"
+verilog work "vga_top.vf"

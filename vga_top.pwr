@@ -1,0 +1,213 @@
+----------------------------------------------------------------------------------------------------------------------------------------
+|                                                        Xilinx XPower Analyzer                                                        |
+----------------------------------------------------------------------------------------------------------------------------------------
+| Release                | 14.2 - P.28xd (nt64)                                                                                        |
+| Command Line           | D:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\xpwr.exe -intstyle ise vga_top.ncd vga_top.pcf -o vga_top.pwr  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------
+|      Table of Contents       |
+--------------------------------
+| 1.  Settings                 |
+| 1.1.  Project                |
+| 1.2.  Device                 |
+| 1.3.  Environment            |
+| 1.4.  Default Activity Rates |
+| 2.  Summary                  |
+| 2.1.  On-Chip Power Summary  |
+| 2.2.  Thermal Summary        |
+| 2.3.  Power Supply Summary   |
+| 2.4.  Confidence Level       |
+| 3.  Detailed Reports         |
+| 3.1.  By Hierarchy           |
+| 4.  Warnings                 |
+--------------------------------
+
+1.  Settings
+1.1.  Project
+-------------------------------------------
+|                 Project                 |
+-------------------------------------------
+| Design File               | vga_top.ncd |
+| Settings File             | NA          |
+| Physical Constraints File | vga_top.pcf |
+| Simulation Activity File  | NA          |
+| Design Nets Matched       | NA          |
+| Simulation Nets Matched   | NA          |
+-------------------------------------------
+
+1.2.  Device
+-----------------------------------------------
+|                   Device                    |
+-----------------------------------------------
+| Family           | Spartan3                 |
+| Part             | xc3s1500                 |
+| Package          | fg320                    |
+| Temp Grade       | Commercial               |
+| Process          | Typical                  |
+| Speed Grade      | -5                       |
+| Characterization | PRODUCTION,v1.2,06-25-09 |
+-----------------------------------------------
+
+1.3.  Environment
+---------------------------
+|       Environment       |
+---------------------------
+| Ambient Temp (C) | 25.0 |
+| Use custom TJA?  | No   |
+| Custom TJA (C/W) | NA   |
+| Airflow (LFM)    | 0    |
+---------------------------
+
+1.4.  Default Activity Rates
+----------------------------------
+|     Default Activity Rates     |
+----------------------------------
+| FF Toggle Rate (%)     | 12.5  |
+| I/O Toggle Rate (%)    | 12.5  |
+| Output Load (pF)       | 5.0   |
+| I/O Enable Rate (%)    | 100.0 |
+| BRAM Write Rate (%)    | 50.0  |
+| BRAM Enable Rate (%)   | 50.0  |
+----------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       2.08 |      1 |    ---    |       ---       |
+| Logic                 |       0.70 |    224 |     26624 |               1 |
+| Signals               |       6.12 |    371 |    ---    |       ---       |
+| IOs                   |       5.25 |     29 |       221 |              13 |
+| BRAMs                 |       3.13 |     22 |        32 |              69 |
+| DCMs                  |      36.63 |      1 |         4 |              25 |
+| Quiescent             |     151.31 |        |           |                 |
+| Total                 |     205.21 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.2.  Thermal Summary
+------------------------------
+|      Thermal Summary       |
+------------------------------
+| Effective TJA (C/W) | 20.4 |
+| Max Ambient (C)     | 80.8 |
+| Junction Temp (C)   | 29.2 |
+------------------------------
+
+2.3.  Power Supply Summary
+-------------------------------------------------------
+|                Power Supply Summary                 |
+-------------------------------------------------------
+|                      | Total  | Dynamic | Quiescent |
+-------------------------------------------------------
+| Supply Power (mW)    | 205.21 | 19.90   | 185.31    |
+-------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.200 |              59.37 |                11.40 |                  47.97 |
+| Vccaux                |          2.500 |              49.16 |                 0.56 |                  48.60 |
+| Vcco25                |          2.500 |               4.43 |                 1.93 |                   2.50 |
+---------------------------------------------------------------------------------------------------------------
+
+2.4.  Confidence Level
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                Confidence Level                                                                                                |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       User Input Data       | Confidence |                        Details                         |                                                   Action                                                   |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Design implementation state | High       | Design is completely routed                            |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 25% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Medium     |                                                        |                                                                                                            |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.  Details
+3.1.  By Hierarchy
+-------------------------------------------------------------------------------------------------------------------------------------------------
+|              By Hierarchy               |   Power (mW)    | Logic Power (mW) | Signal Power (mW) |     # LUTs      |     # BRAMs     | # DCMs |
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Hierarchy total                         |  46.57          |  40.46           |   6.12            |    203          |     44          |      1 |
+|   vga_top                               |  36.91 /  46.57 |  36.63 /  40.46  |   0.29 /   6.12   |      0 /    203 |      0 /     44 |      1 |
+|     XLXI_3                              |   0.00 /   4.68 |   0.00 /   3.38  |   0.00 /   1.30   |      0 /     80 |      0 /     44 |      0 |
+|       U0                                |   0.00 /   4.68 |   0.00 /   3.38  |   0.00 /   1.30   |      0 /     80 |      0 /     44 |      0 |
+|         xst_blk_mem_generator           |   0.00 /   4.68 |   0.00 /   3.38  |   0.00 /   1.30   |      0 /     80 |      0 /     44 |      0 |
+|           gnativebmg.native_blk_mem_gen |   0.00 /   4.68 |   0.00 /   3.38  |   0.00 /   1.30   |      0 /     80 |      0 /     44 |      0 |
+|             valid.cstr                  |   0.52 /   4.68 |   0.02 /   3.38  |   0.50 /   1.30   |      8 /     80 |      0 /     44 |      0 |
+|               has_mux_a.A               |   1.03          |   0.23           |   0.80            |     72          |      0          |      0 |
+|               ramloop[0].ram.r          |   0.00 /   0.50 |   0.00 /   0.50  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.50          |   0.50           |   0.00            |      0          |      2          |      0 |
+|               ramloop[10].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[11].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[12].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[13].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[14].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[15].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[16].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[17].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[18].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[19].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[1].ram.r          |   0.00 /   0.50 |   0.00 /   0.50  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.50          |   0.50           |   0.00            |      0          |      2          |      0 |
+|               ramloop[20].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[21].ram.r         |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[2].ram.r          |   0.00 /   0.50 |   0.00 /   0.50  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.50          |   0.50           |   0.00            |      0          |      2          |      0 |
+|               ramloop[3].ram.r          |   0.00 /   0.50 |   0.00 /   0.50  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.50          |   0.50           |   0.00            |      0          |      2          |      0 |
+|               ramloop[4].ram.r          |   0.00 /   0.50 |   0.00 /   0.50  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.50          |   0.50           |   0.00            |      0          |      2          |      0 |
+|               ramloop[5].ram.r          |   0.00 /   0.50 |   0.00 /   0.50  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.50          |   0.50           |   0.00            |      0          |      2          |      0 |
+|               ramloop[6].ram.r          |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[7].ram.r          |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[8].ram.r          |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|               ramloop[9].ram.r          |   0.00 /   0.01 |   0.00 /   0.01  |   0.00            |      0          |      0 /      2 |      0 |
+|                 s3_init.ram             |   0.01          |   0.01           |   0.00            |      0          |      2          |      0 |
+|     XLXI_1                              |   4.98          |   0.45           |   4.53            |    123          |      0          |      0 |
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4.  Warnings
+--------------------------------------------------------------------------------
+WARNING:PowerEstimator:270 - Power estimate is considered inaccurate. To see details, generate an advanced report with the "-v" switch.
+WARNING:Power:1337 - Clock frequency for clock net "XLXI_2/CLK0_BUF" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+timing constraints (PCF file) or simulation data.  Without knowing the
+clock frequency of all clocks, dynamic power information for those clock
+domains will default to zero which may under-estimate the power for this
+design.  To avoid this warning, provide at least one of the following:
+  1. The proper timing constraints (PERIOD) for clocks (re-implement design
+     and load the newly generated PCF file into XPower Analyzer)
+  2. A post PAR simulation-generated VCD or SAIF file indicating clock
+     frequencies
+  3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+     XPower Analyzer GUI and then applying "Update Power Analysis"
+--------------------------------------------------------------------------------
+
+Analysis completed: Sat Jun 06 16:10:31 2015
+----------------------------------------------------------------

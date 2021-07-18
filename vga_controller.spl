@@ -1,0 +1,15 @@
+[Inputs]
+clk
+rstNeg
+=data[23:0]=
+[Outputs]
+hsync
+vsync
+=red[7:0]=
+=green[7:0]=
+=blue[7:0]=
+=addr[13:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel vga_controller
+

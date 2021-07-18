@@ -1,0 +1,27 @@
+xst -intstyle ise -ifn "E:/homework/VGA/vga_top.xst" -ofn "E:/homework/VGA/vga_top.syr" 
+sch2sym -intstyle ise -family spartan3 -refsym vga_top E:/homework/VGA/src/vga_top.sch E:/homework/VGA/vga_top.sym 
+xst -intstyle ise -ifn "E:/homework/VGA/vga_top.xst" -ofn "E:/homework/VGA/vga_top.syr" 
+xst -intstyle ise -ifn "E:/homework/VGA/vga_top.xst" -ofn "E:/homework/VGA/vga_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim vga_top.ngc vga_top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s1500-fg320-5 vga_top.ngc vga_top.ngd  
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o vga_top_map.ncd vga_top.ngd vga_top.pcf 
+par -w -intstyle ise -ol high -t 1 vga_top_map.ncd vga_top.ncd vga_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vga_top.twx vga_top.ncd -o vga_top.twr vga_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_top.ucf -p xc3s1500-fg320-5 vga_top.ngc vga_top.ngd  
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o vga_top_map.ncd vga_top.ngd vga_top.pcf 
+par -w -intstyle ise -ol high -t 1 vga_top_map.ncd vga_top.ncd vga_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vga_top.twx vga_top.ncd -o vga_top.twr vga_top.pcf -ucf vga_top.ucf 
+xpwr -intstyle ise vga_top.ncd vga_top.pcf -o vga_top.pwr 
+netgen -intstyle ise -s 5  -pcf vga_top.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vga_top.ncd vga_top_timesim.v 
+ibiswriter -intstyle ise -truncate 20 vga_top.ncd vga_top.ibs 
+pin2ucf vga_top.ncd -o E:/homework/VGA/vga_top.ucf -r vga_top.lck 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_top.ucf -p xc3s1500-fg320-5 vga_top.ngc vga_top.ngd  
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o vga_top_map.ncd vga_top.ngd vga_top.pcf 
+par -w -intstyle ise -ol high -t 1 vga_top_map.ncd vga_top.ncd vga_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vga_top.twx vga_top.ncd -o vga_top.twr vga_top.pcf -ucf vga_top.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s1500-fg320-5 vga_top.ngc vga_top.ngd  
+map -intstyle ise -p xc3s1500-fg320-5 -cm area -ir off -pr off -c 100 -o vga_top_map.ncd vga_top.ngd vga_top.pcf 
+par -w -intstyle ise -ol high -t 1 vga_top_map.ncd vga_top.ncd vga_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml vga_top.twx vga_top.ncd -o vga_top.twr vga_top.pcf 
+netgen -intstyle ise -s 5  -pcf vga_top.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim vga_top_map.ncd vga_top_map.v 
+netgen -intstyle ise -s 5  -pcf vga_top.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vga_top.ncd vga_top_timesim.v 

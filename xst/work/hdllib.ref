@@ -1,0 +1,4 @@
+MO vga_dcm NULL vga_dcm.v vlg4D/vga__dcm.bin 1433574083
+MO vga_rom NULL ipcore_dir/vga_rom.v vlg67/vga__rom.bin 1433574083
+MO vga_controller NULL src/vga_controller.v vlg3D/vga__controller.bin 1433574083
+MO vga_top NULL vga_top.vf vlg1C/vga__top.bin 1433574083

@@ -1,0 +1,2 @@
+xaw2spl {-intstyle ise} E:/homework/VGA/ipcore_dir/vga_dcm.xaw 
+spl2sym -intstyle ise -family spartan3 vga_dcm.spl E:/homework/VGA/vga_dcm.sym 

@@ -1,0 +1,131 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\homework\VGA
+T_opt
+Z1 V[aWdU@L@K5gdi3VUDm^EO3
+Z2 04 22 4 work vga_top_vga_top_sch_tb fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-047d7b9d7d8c-5572b553-14f-830
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver +acc
+Z6 n@_opt
+Z7 OE;O;10.1a;51
+Z8 dE:\homework\VGA
+T_opt1
+Z9 Vb84NQKW[FK6JjcMPQ?bBU3
+R2
+R3
+Z10 =1-047d7b9d7d8c-5572bcee-1e3-1dcc
+Z11 o-quiet -auto_acc_if_foreign -work work -L simprims_ver +maxdelays +acc
+Z12 n@_opt1
+R7
+R8
+vglbl
+!i10b 1
+Z13 !s100 >P`I5MN_o?8cCP=C=Bl4_3
+Z14 IlJ9ToEUUk6Y5AoNI6TUBo0
+Z15 VM[9mS]S:KA1i4VeCMX35[3
+R8
+Z16 w1341890449
+Z17 8D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v
+Z18 FD:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+Z19 OE;L;10.1a;51
+r1
+!s85 0
+31
+!s108 1433679699.552000
+!s107 D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v|
+Z20 !s90 -reportprogress|300|D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v|
+Z21 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vvga_controller
+Z22 !s100 X06ie1W?:[B7]G:zG2gDK0
+Z23 I41IE2TVogLBnHMT8[K;d02
+Z24 V<KbjlJ<A884NzdbE`hhD52
+R8
+Z25 w1433566475
+Z26 8src/vga_controller.v
+Z27 Fsrc/vga_controller.v
+L0 21
+R19
+r1
+31
+Z28 !s90 -reportprogress|300|src/vga_controller.v|
+R21
+Z29 !s108 1433679697.343000
+Z30 !s107 src/vga_controller.v|
+!i10b 1
+!s85 0
+vvga_dcm
+Z31 !s100 M3Wc8h]E6J_HR1R2?oR<A3
+Z32 IK@gH2<UgkTXA<9]gQ0MD60
+Z33 V^CI0;L648XJa?[f>nE^4H1
+R8
+Z34 w1433573391
+Z35 8vga_dcm.v
+Z36 Fvga_dcm.v
+L0 23
+R19
+r1
+31
+Z37 !s90 -reportprogress|300|vga_dcm.v|
+R21
+Z38 !s108 1433679698.442000
+Z39 !s107 vga_dcm.v|
+!i10b 1
+!s85 0
+vvga_rom
+Z40 !s100 T=o_a3IUL<4zOMhJFJ_<P1
+Z41 I0dK0RDZkQ_?`NJ7I=i@9h1
+Z42 VUFX4>f9Fi65aK?kFPA<Wh3
+R8
+Z43 w1433571904
+Z44 8ipcore_dir/vga_rom.v
+Z45 Fipcore_dir/vga_rom.v
+L0 39
+R19
+r1
+31
+Z46 !s90 -reportprogress|300|ipcore_dir/vga_rom.v|
+R21
+Z47 !s108 1433679698.050000
+Z48 !s107 ipcore_dir/vga_rom.v|
+!i10b 1
+!s85 0
+vvga_top
+Z49 IaiM`4HD^ULZ6Sh>JXIb6Y2
+Z50 V^6XB0hFFB>O2E[3U8`Hb71
+R8
+Z51 w1433573388
+Z52 8vga_top.vf
+Z53 Fvga_top.vf
+L0 23
+R19
+r1
+31
+R21
+Z54 !s100 n`fWX@5I_F^7fzYT3D:E83
+Z55 !s108 1433679698.872000
+Z56 !s107 vga_top.vf|
+Z57 !s90 -reportprogress|300|vga_top.vf|
+!i10b 1
+!s85 0
+vvga_top_vga_top_sch_tb
+Z58 !s100 DcQTnkX<K]V?32fe0=DNc1
+Z59 I@=HO6e27BNR9Yid?MMRAd3
+Z60 VI2B8<BTK`8bO>VQH6jZic3
+R8
+Z61 w1433580860
+Z62 8src/test.v
+Z63 Fsrc/test.v
+L0 5
+R19
+r1
+31
+Z64 !s90 -reportprogress|300|src/test.v|
+R21
+!i10b 1
+!s85 0
+Z65 !s108 1433679699.183000
+Z66 !s107 src/test.v|

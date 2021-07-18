@@ -1,0 +1,8 @@
+vhdtdtfi -lib work E:/homework/VGA/src/vga_controller.v -lang verilog -prj VGA -o vga_controller.spl -module vga_controller -template D:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 vga_controller.spl E:/homework/VGA/vga_controller.sym 
+vhdtdtfi -lib work E:/homework/VGA/src/vga_controller.v -lang verilog -prj VGA -o vga_controller.spl -module vga_controller -template D:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 vga_controller.spl E:/homework/VGA/vga_controller.sym 
+xst -intstyle ise -ifn "E:/homework/VGA/vga_controller.xst" -ofn "E:/homework/VGA/vga_controller.syr" 
+xst -intstyle ise -ifn "E:/homework/VGA/vga_controller.xst" -ofn "E:/homework/VGA/vga_controller.syr" 
+vhdtdtfi -lib work E:/homework/VGA/src/vga_controller.v -lang verilog -prj VGA -o vga_controller.spl -module vga_controller -template D:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 vga_controller.spl E:/homework/VGA/vga_controller.sym 

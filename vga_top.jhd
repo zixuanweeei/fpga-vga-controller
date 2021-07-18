@@ -1,0 +1,7 @@
+MODULE vga_top
+	SUBMODULE vga_controller
+		INSTANCE XLXI_1
+	SUBMODULE vga_dcm
+		INSTANCE XLXI_2
+	SUBMODULE vga_rom
+		INSTANCE XLXI_3
